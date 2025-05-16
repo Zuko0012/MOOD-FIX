@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mood Fix Form ❤️</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #c2e9fb, #81a4fd);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      width: 320px;
+      text-align: center;
+    }
+    h3 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    button {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #e73c4a;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h3>Mood Fix Form ❤️</h3>
+  <form id="grievanceForm" action="https://formspree.io/f/mwpoyopd" method="POST">
+    <input type="text" name="title" id="title" placeholder="Title" required />
+    <textarea name="complaint" id="complaint" rows="3" placeholder="What's bothering you?" required></textarea>
+
+    <label for="mood">Mood:</label>
+    <select name="mood" id="mood">
+      <option>😊 Happy</option>
+      <option>😡 Angry</option>
+      <option>😢 Sad</option>
+      <option>🥰 Loved</option>
+      <option>😴 Sleepy</option>
+    </select>
+
+    <label for="severity">Fix:</label>
+    <select name="severity" id="severity">
+      <option>A Ferrero Rocher 🍬</option>
+      <option>A Flakes 🍫</option>
+      <option>Big hug 🤗</option>
+      <option>Ice cream date 🍦</option>
+      <option>Death By Chocolate 🍰</option>
+      <option>Missin' me 🥺</option>
+      <option>Kisses 😘</option>
+      <option>Shakes 🥤</option>
+      <option>Pampering 💅</option>
+      <option>Car date 🚗❤️</option>
+    </select>
+
+    <button type="submit">Submit 💌</button>
+  </form>
+</div>
+
+</body>
+</html>
